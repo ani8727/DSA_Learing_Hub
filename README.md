@@ -68,7 +68,6 @@
 **Name:** Aniket Gupta  
 **GitHub:** [@ani8727](https://github.com/ani8727)  
 **LinkedIn:** [Aniket Gupta](https://www.linkedin.com/in/aniket-gupta-ani8727/)  
-**Email:** aniketgupta.dev@gmail.com  
 
 > *"Building modern, responsive web applications with cutting-edge technologies"*
 
