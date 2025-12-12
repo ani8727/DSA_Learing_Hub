@@ -6,9 +6,9 @@ import CodeBlock from '../components/CodeBlock';
 const DynamicProgramming = () => {
   return (
     <div className="space-y-6">
-      <div className="glass-effect rounded-xl p-8">
+      <div className="card-modern rounded-xl p-8">
         <h1 className="text-4xl font-bold gradient-text mb-3">Dynamic Programming ✨</h1>
-        <p className="text-gray-600 text-lg">Master the art of optimization</p>
+        <p className="text-gray-700 dark:text-gray-300 text-lg">Master the art of optimization</p>
       </div>
 
       <Section title="DP Fundamentals" icon={Sparkles} defaultOpen>
@@ -81,7 +81,7 @@ int rob(vector<int>& nums) {
         <div className="space-y-4">
           <div className="border-l-4 border-blue-500 pl-6">
             <h3 className="text-xl font-semibold mb-2">1. Linear DP (1D)</h3>
-            <p className="text-sm text-gray-600">Climbing Stairs, House Robber, Decode Ways</p>
+            <p className="text-sm text-gray-700">Climbing Stairs, House Robber, Decode Ways</p>
           </div>
 
           <div className="border-l-4 border-green-500 pl-6">

@@ -10,13 +10,15 @@ import Sorting from './pages/Sorting';
 import Strings from './pages/Strings';
 import Trees from './pages/Trees';
 import DynamicProgramming from './pages/DynamicProgramming';
+import Test from './pages/Test';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/DSA_Learing_Hub">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/test" element={<Test />} />
           <Route path="/linkedlist" element={<LinkedList />} />
           <Route path="/arrays" element={<Arrays />} />
           <Route path="/two-pointer" element={<TwoPointer />} />

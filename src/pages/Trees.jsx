@@ -6,9 +6,9 @@ import CodeBlock from '../components/CodeBlock';
 const Trees = () => {
   return (
     <div className="space-y-6">
-      <div className="glass-effect rounded-xl p-8">
-        <h1 className="text-4xl font-bold gradient-text mb-3">Trees & Binary Trees 🌲</h1>
-        <p className="text-gray-600 text-lg">Master tree traversals and common patterns</p>
+      <div className="card-modern rounded-xl p-8">
+        <h1 className="text-4xl font-bold gradient-text mb-3">Tree Data Structures 🌲</h1>
+        <p className="text-gray-700 dark:text-gray-300 text-lg">Master tree traversals and common patterns</p>
       </div>
 
       <Section title="Tree Fundamentals" icon={TreePine} defaultOpen>

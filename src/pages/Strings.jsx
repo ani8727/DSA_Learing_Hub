@@ -6,9 +6,9 @@ import CodeBlock from '../components/CodeBlock';
 const Strings = () => {
   return (
     <div className="space-y-6">
-      <div className="glass-effect rounded-xl p-8">
-        <h1 className="text-4xl font-bold gradient-text mb-3">String Patterns 📝</h1>
-        <p className="text-gray-600 text-lg">Master string manipulation techniques</p>
+      <div className="card-modern rounded-xl p-8">
+        <h1 className="text-4xl font-bold gradient-text mb-3">String Manipulation 📝</h1>
+        <p className="text-gray-700 dark:text-gray-300 text-lg">Master string manipulation techniques</p>
       </div>
 
       <Section title="String Basics" icon={Type} defaultOpen>

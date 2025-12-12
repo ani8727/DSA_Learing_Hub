@@ -6,9 +6,9 @@ import CodeBlock from '../components/CodeBlock';
 const TwoPointer = () => {
   return (
     <div className="space-y-6">
-      <div className="glass-effect rounded-xl p-8">
-        <h1 className="text-4xl font-bold gradient-text mb-3">Two Pointer Pattern 👉👈</h1>
-        <p className="text-gray-600 text-lg">Master efficient two pointer techniques</p>
+      <div className="card-modern rounded-xl p-8">
+        <h1 className="text-4xl font-bold gradient-text mb-3">Two Pointer Technique 👉</h1>
+        <p className="text-gray-700 dark:text-gray-300 text-lg">Master efficient two pointer techniques</p>
       </div>
 
       <Section title="Core Concept" icon={Move} defaultOpen>

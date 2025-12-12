@@ -6,9 +6,9 @@ import CodeBlock from '../components/CodeBlock';
 const Arrays = () => {
   return (
     <div className="space-y-6">
-      <div className="glass-effect rounded-xl p-8">
+      <div className="card-modern rounded-xl p-8">
         <h1 className="text-4xl font-bold gradient-text mb-3">Arrays Mastery Guide 📊</h1>
-        <p className="text-gray-600 text-lg">Master array manipulation, patterns, and techniques</p>
+        <p className="text-gray-700 dark:text-gray-300 text-lg">Master array manipulation, patterns, and techniques</p>
       </div>
 
       <Section title="Array Fundamentals" icon={Grid3x3} defaultOpen>
@@ -18,9 +18,9 @@ const Arrays = () => {
           </p>
           
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-              <h4 className="font-semibold text-blue-900 mb-3">⏱️ Time Complexities:</h4>
-              <ul className="text-gray-700 space-y-2 font-mono text-sm">
+            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800">
+              <h4 className="font-semibold text-blue-900 dark:text-blue-100 mb-3">⏱️ Time Complexities:</h4>
+              <ul className="text-gray-700 dark:text-gray-300 space-y-2 font-mono text-sm">
                 <li>• Access: <strong>O(1)</strong></li>
                 <li>• Search: <strong>O(n)</strong></li>
                 <li>• Insert (end): <strong>O(1)</strong></li>
@@ -28,9 +28,9 @@ const Arrays = () => {
                 <li>• Delete: <strong>O(n)</strong></li>
               </ul>
             </div>
-            <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-              <h4 className="font-semibold text-green-900 mb-3">🔧 Common Operations:</h4>
-              <ul className="text-gray-700 space-y-2">
+            <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg border border-green-200 dark:border-green-800">
+              <h4 className="font-semibold text-green-900 dark:text-green-100 mb-3">🔧 Common Operations:</h4>
+              <ul className="text-gray-700 dark:text-gray-300 space-y-2">
                 <li>• Traversal & Iteration</li>
                 <li>• Searching (Linear, Binary)</li>
                 <li>• Sorting</li>
@@ -46,7 +46,7 @@ const Arrays = () => {
         <div className="space-y-6">
           <div className="border-l-4 border-blue-500 pl-6">
             <h3 className="text-xl font-semibold mb-2">1. Prefix Sum Pattern</h3>
-            <p className="text-gray-600 mb-3">For range sum queries in O(1)</p>
+            <p className="text-gray-700 mb-3">For range sum queries in O(1)</p>
             <CodeBlock code={`// Build prefix sum array
 vector<int> prefixSum(vector<int>& arr) {
     int n = arr.size();
