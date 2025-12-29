@@ -1,0 +1,12 @@
+{
+  "title": "Advanced DSA Roadmap",
+  "description": "Master advanced algorithms and optimization techniques",
+  "steps": [
+    "Graph → Shortest Path Algorithms",
+    "Graph → Minimum Spanning Tree",
+    "Dynamic Programming → Advanced Problems",
+    "String → Advanced Algorithms",
+    "Tree → Advanced Tree Problems",
+    "System Design → Scalability Patterns"
+  ]
+}

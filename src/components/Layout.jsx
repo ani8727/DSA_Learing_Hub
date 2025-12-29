@@ -7,27 +7,22 @@ const Layout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="min-h-screen gradient-bg font-body">
-      {/* Main container with primary background */}
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 font-body">
       <Navbar onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
-      
+
       <div className="flex">
         <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
-        
-        {/* Main content area with secondary background for hierarchy */}
+
         <main className="flex-1 lg:ml-64 pt-16 transition-all duration-300">
-          <div className="min-h-screen bg-secondary">
-            {/* Content container with tertiary background for deeper hierarchy */}
+          <div className="min-h-screen">
             <div className="p-6 lg:p-8 max-w-7xl mx-auto">
-              <div className="bg-tertiary rounded-2xl border border-light p-6 lg:p-8 animate-fade-in shadow-lg">
-                {/* Content wrapper with highest surface for maximum contrast */}
-                <div className="surface-highest rounded-xl p-6 border border-subtle shadow-md">
+              <div className="glass-primary dark:glass-primary/80 rounded-2xl p-6 lg:p-8 animate-fade-in">
+                <div className="bg-transparent rounded-xl p-2">
                   {children}
                 </div>
               </div>
             </div>
-            
-            {/* Footer */}
+
             <Footer />
           </div>
         </main>

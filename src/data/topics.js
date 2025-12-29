@@ -157,23 +157,28 @@ export const TOPICS = [
   // ============================================
   // EASY TO ADD NEW TOPICS - Just uncomment and customize!
   // ============================================
-  // {
-  //   id: 'graphs',
-  //   path: '/graphs',
-  //   icon: GitBranch,
-  //   label: 'Graphs',
-  //   title: 'Graph Algorithms',
-  //   description: 'Graph traversal and algorithms',
-  //   color: 'cyan',
-  //   problemCount: 25,
-  //   enabled: true,
-  //   topics: [
-  //     'DFS & BFS',
-  //     'Shortest Path',
-  //     'Topological Sort',
-  //     'Union Find'
-  //   ]
-  // },
+  {
+    id: 'graphs',
+    path: '/graphs',
+    icon: GitBranch,
+    label: 'Graphs',
+    title: 'Graph Algorithms',
+    description: 'Graph traversal and algorithms',
+    color: 'cyan',
+    problemCount: 60,
+    enabled: true,
+    topics: [
+      'DFS & BFS',
+      'Shortest Path',
+      'Topological Sort',
+      'Union Find',
+      'MST',
+      'Bipartite',
+      'Graph Representation',
+      'Cycle Detection',
+      'Advanced Patterns'
+    ]
+  },
   // {
   //   id: 'heaps',
   //   path: '/heaps',

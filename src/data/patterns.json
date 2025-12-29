@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sliding-window",
+    "name": "Sliding Window",
+    "group": "Array & Two Pointer Patterns",
+    "coreIdea": "Maintain a window over data and adjust dynamically to meet constraints.",
+    "mentalModel": "Expand → Process → Shrink",
+    "whenToUse": ["Subarrays", "Contiguous elements", "Max / Min / Count problems"],
+    "template": "// C++ code template here",
+    "variations": ["Fixed Window", "Variable Window"],
+    "problems": ["maximum-subarray-sum", "longest-substring-without-repeating", "minimum-window-substring"],
+    "overview": "",
+    "commonTypes": [],
+    "sourceMd": ""
+  },
+  {
+    "id": "two-pointer",
+    "name": "Two Pointer",
+    "group": "Array & Linked List Patterns",
+    "coreIdea": "Use two pointers to solve problems efficiently by iterating from different directions.",
+    "mentalModel": "Start → Move → Meet",
+    "whenToUse": ["Pair problems", "Cycle detection", "Subarray problems"],
+    "template": "// C++ code template here",
+    "variations": ["Opposite Direction", "Same Direction"],
+    "problems": ["two-sum", "3sum", "container-with-most-water"],
+    "overview": "",
+    "commonTypes": [],
+    "sourceMd": ""
+  },
+  {
+    "id": "prefix-sum",
+    "name": "Prefix Sum",
+    "group": "Array Patterns",
+    "coreIdea": "Precompute sums to solve range queries efficiently.",
+    "mentalModel": "Precompute → Query",
+    "whenToUse": ["Range queries", "Subarray sums", "Difference arrays"],
+    "template": "// C++ code template here",
+    "variations": ["1D Prefix Sum", "2D Prefix Sum"],
+    "problems": ["subarray-sum-equals-k", "range-sum-query", "maximum-size-subarray-sum-equals-k"],
+    "overview": "",
+    "commonTypes": [],
+    "sourceMd": ""
+  }
+]

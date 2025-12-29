@@ -1,0 +1,35 @@
+[
+  {
+    "id": "max-sum-subarray-k",
+    "title": "Maximum Sum Subarray of Size K",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/problems/maximum-sum-subarray-of-size-k/",
+    "whyPattern": "We need maximum sum of contiguous elements of fixed size.",
+    "approach": [
+      "Initialize window sum with first K elements",
+      "Slide window by removing left element and adding right element",
+      "Track maximum sum at each step"
+    ],
+    "complexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  },
+  {
+    "id": "longest-substring-without-repeating",
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "whyPattern": "Need to find longest substring with unique characters.",
+    "approach": [
+      "Use hash set to track characters in current window",
+      "Expand window by moving right pointer",
+      "When duplicate found, shrink from left until duplicate removed",
+      "Track maximum length"
+    ],
+    "complexity": {
+      "time": "O(n)",
+      "space": "O(min(m,n))"
+    }
+  }
+]

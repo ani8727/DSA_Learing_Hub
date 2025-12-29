@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
 /* Advanced Color Hierarchy System */
 :root {
@@ -7,27 +7,32 @@
   --bg-secondary: #f1f4f8;    /* Content areas - medium */
   --bg-tertiary: #e8ecf2;     /* Cards/containers - darker */
   --bg-accent: #dbe4f0;       /* Highlights - darkest bg */
-  
+
   --surface-highest: #ffffff; /* Elevated surfaces */
   --surface-high: #f8fafc;    /* High surfaces */
   --surface-mid: #f1f5f9;     /* Mid surfaces */
   --surface-low: #e2e8f0;     /* Low surfaces */
-  
+
   --text-primary: #0f172a;    /* Main text - highest contrast */
   --text-secondary: #1e293b;  /* Secondary text */
   --text-tertiary: #475569;   /* Tertiary text */
   --text-muted: #64748b;      /* Muted text */
   --text-accent: #2563eb;     /* Accent text */
-  
+
   --border-subtle: #f1f5f9;
   --border-light: #e2e8f0;
   --border-medium: #cbd5e1;
   --border-strong: #94a3b8;
-  
+
   /* Gradients for depth */
   --gradient-primary: linear-gradient(135deg, #fafbfc 0%, #f1f4f8 100%);
   --gradient-surface: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
   --gradient-accent: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+}
+
+/* Global typography */
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
 .dark {
@@ -36,23 +41,23 @@
   --bg-secondary: #111827;    /* Content areas - lighter */
   --bg-tertiary: #1f2937;     /* Cards/containers - lighter */
   --bg-accent: #374151;       /* Highlights - lightest bg */
-  
+
   --surface-highest: #374151; /* Elevated surfaces */
   --surface-high: #1f2937;    /* High surfaces */
   --surface-mid: #111827;     /* Mid surfaces */
   --surface-low: #0f172a;     /* Low surfaces */
-  
+
   --text-primary: #f9fafb;    /* Main text - highest contrast */
   --text-secondary: #e5e7eb;  /* Secondary text */
   --text-tertiary: #d1d5db;   /* Tertiary text */
   --text-muted: #9ca3af;      /* Muted text */
   --text-accent: #60a5fa;     /* Accent text */
-  
+
   --border-subtle: #1f2937;
   --border-light: #374151;
   --border-medium: #4b5563;
   --border-strong: #6b7280;
-  
+
   /* Gradients for depth */
   --gradient-primary: linear-gradient(135deg, #0a0f1c 0%, #111827 100%);
   --gradient-surface: linear-gradient(135deg, #1f2937 0%, #111827 100%);
@@ -135,16 +140,16 @@ body {
 /* Glass Effects with Hierarchy */
 .glass-primary {
   background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .glass-secondary {
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }

@@ -1,0 +1,17 @@
+{
+  "id": "sliding-window",
+  "title": "Sliding Window",
+  "category": "Array",
+  "difficulty": "Beginner",
+  "coreIdea": "Efficiently process contiguous subarrays using a dynamic window.",
+  "mentalModel": "Expand → Process → Shrink",
+  "whenToUse": [
+    "Subarrays or substrings",
+    "Contiguous elements",
+    "Max / Min / Count problems"
+  ],
+  "variations": [
+    "Fixed Window",
+    "Variable Window"
+  ]
+}
