@@ -1,4 +1,4 @@
-# Niket's Portfolio
+# DSA Learning Hub
 
 🌐 **Live Preview**
 
@@ -15,18 +15,16 @@
 
 ---
 
-## A modern, responsive portfolio website showcasing projects and skills as a Full Stack Developer specializing in Java backend, Spring Boot, cloud-native services, and Data Structures & Algorithms.
+## A modern, interactive learning platform for Data Structures and Algorithms (DSA) patterns.
 
 ---
 
 ## 🚀 Features
 
-- **Modern Design**: Clean and professional UI with smooth animations
-- **Responsive**: Optimized for all device sizes (Mobile, Tablet, Desktop)
-- **Project Showcase**: 6 Interactive project cards with GitHub integration
-- **Skills Display**: Comprehensive tech stack visualization with certificates
-- **Contact Form**: Functional contact form with EmailJS integration
-- **SEO Optimized**: Complete meta tags, sitemap, favicon, and robots.txt support
+- **Interactive Learning**: Comprehensive tutorials and practice problems for DSA patterns
+- **Pattern-wise Organization**: Learn DSA through categorized patterns like BFS, DFS, Sliding Window, etc.
+- **Responsive Design**: Optimized for all device sizes (Mobile, Tablet, Desktop)
+- **Modern UI**: Clean and professional design with smooth animations
 - **Performance Optimized**: Vite-based fast builds and development
 
 ---
@@ -36,16 +34,14 @@
 - **Frontend**: React 19, Tailwind CSS, React Router
 - **Build Tool**: Vite
 - **Icons**: React Icons
-- **Email Service**: EmailJS
-- **Image Processing**: Jimp
 - **Code Quality**: ESLint
 - **Deployment**: GitHub Pages with Vite
 
 ---
 
-## 📋 Portfolio Overview
+## 📋 Project Overview
 
-This repository contains a modern, fully-functional portfolio built with React and Tailwind CSS. It showcases personal projects, technical skills, certificates, and contact functionality. The app is built with Vite for lightning-fast development and optimized production builds.
+This repository contains an interactive learning platform for Data Structures and Algorithms (DSA). It is designed to help users understand and practice DSA patterns through categorized tutorials and problems. The app is built with Vite for lightning-fast development and optimized production builds.
 
 ---
 
@@ -53,9 +49,7 @@ This repository contains a modern, fully-functional portfolio built with React a
 
 - **Frontend**: React 19, Vite, Tailwind CSS (utility-first styling), React Router DOM
 - **Languages**: JavaScript (ESNext), JSX
-- **Icons & Components**: react-icons, react-parallax-tilt
-- **Email Service**: EmailJS (client-side form submissions)
-- **Images & Assets**: SVG project previews, PNG logos, PDF certificates
+- **Icons & Components**: react-icons
 - **Docs / SEO**: meta tags, manifest.json, sitemap.xml, robots.txt, favicon
 - **Testing & Linting**: ESLint (config included)
 - **Build & Deployment**: Vite for fast builds, GitHub Pages for hosting
@@ -64,48 +58,44 @@ This repository contains a modern, fully-functional portfolio built with React a
 
 ## Data Structures & Algorithms (DSA)
 
-This portfolio emphasizes algorithmic problem solving and DSA fundamentals. Projects and learning resources include:
+This platform emphasizes algorithmic problem solving and DSA fundamentals. Learning resources include:
 
 - **Pattern-wise DSA repository** (arrays, two-pointers, binary search, DP, graphs)
-- **Practice tracker visuals** (DSA sheet) and curated lists of problems
-
-If you want the DSA section to contain live statistics or dynamic progress, we can integrate an API or a small JSON-based progress tracker.
+- **Interactive tutorials** for each pattern
+- **Practice problems** with solutions
 
 ---
 
-## 📂 Projects Showcase
+## 📂 Patterns Showcase
 
-The Portfolio showcases 6 major projects with live links and GitHub repositories:
+The platform includes the following DSA patterns:
 
-1. **FitTrack - Full Stack Fitness App**
-   - Full-stack fitness tracking application
-   - Tech: React, Java, Spring Boot
-   - Links: [GitHub](#)
+1. **BFS (Breadth-First Search)**
+   - Tutorials, code examples, and practice problems
 
-2. **Patient Management Service**
-   - Comprehensive healthcare management system
-   - Tech: Spring Boot, React, MySQL
-   - Links: [GitHub](#) | [Demo](#)
+2. **DFS (Depth-First Search)**
+   - Tutorials, code examples, and practice problems
 
-3. **DSA Pattern Wise**
-   - Data Structures & Algorithms problems organized by patterns
-   - 350+ DSA problems with solutions
-   - Links: [GitHub](#)
+3. **Sliding Window**
+   - Tutorials, code examples, and practice problems
 
-4. **DSA Learning Hub**
-   - Interactive learning platform for DSA
-   - Comprehensive tutorials and practice
-   - Links: [GitHub](https://github.com/ani8727/DSA_Learing_Hub) | [Live](#)
+4. **Two Pointers**
+   - Tutorials, code examples, and practice problems
 
-5. **DSA Sheet - Topic Wise**
-   - Well-organized DSA practice tracker
-   - Topic categorized with difficulty levels
-   - Links: [GitHub](#)
+5. **Graph Algorithms**
+   - Tutorials, code examples, and practice problems
 
-6. **Metro Route Finder**
-   - Route finding application using Dijkstra's Algorithm
-   - Efficient path finding solution
-   - Links: [GitHub](#)
+6. **Union-Find**
+   - Tutorials, code examples, and practice problems
+
+7. **Cyclic Sort**
+   - Tutorials, code examples, and practice problems
+
+8. **Merge Intervals**
+   - Tutorials, code examples, and practice problems
+
+9. **Fast & Slow Pointers**
+   - Tutorials, code examples, and practice problems
 
 ---
 
@@ -134,7 +124,7 @@ npm run preview
 
 ### GitHub Pages Deployment
 
-The Portfolio is deployed on GitHub Pages at: [ani8727.github.io/DSA_Learing_Hub](#)
+The platform is ready for deployment on GitHub Pages.
 
 #### Deploy Steps:
 
@@ -160,23 +150,12 @@ The Portfolio is deployed on GitHub Pages at: [ani8727.github.io/DSA_Learing_Hub
    npm run deploy
    ```
 
-### Alternative Deployment Options
-
-- **Vercel**: Auto-deploy from GitHub (recommended)
-  - Connect repo to Vercel dashboard
-  - Build command: `npm run build`
-  - Output: `dist`
-
-- **Netlify**: Static hosting
-  - Build command: `npm run build`
-  - Publish directory: `dist`
-
 ---
 
 ## 📫 Contact
 
-Connect via the contact form on the site or GitHub.
+Connect via GitHub.
 
 ---
 
-_Last updated: 2025-12-12_
+_Last updated: 2026-01-01_
