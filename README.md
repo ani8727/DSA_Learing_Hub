@@ -1,161 +1,88 @@
-# DSA Learning Hub
+# DSA Pattern Hub
 
-🌐 **Live Preview**
+A practical learning platform for Data Structures and Algorithms, organized by problem-solving patterns.
 
-[**Live Demo**](#)
+## About
 
----
+This project helps developers prepare for coding interviews by teaching common DSA patterns. Instead of memorizing individual problems, you'll learn to recognize patterns that appear across multiple problems.
 
-## Quick Links
+## Features
 
-- [GitHub Repo](https://github.com/ani8727/DSA_Learing_Hub)
-- Build Status: ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-- Deployment: [Live Demo](#)
-- License: [MIT](LICENSE)
+- **19 Core Patterns** covering 327+ LeetCode problems
+- Pattern-based organization (Two Pointers, Sliding Window, DFS, BFS, etc.)
+- Problem sets with hints and solutions
+- Theory explanations for each pattern
+- Code examples in JavaScript and C++
 
----
+## Tech Stack
 
-## A modern, interactive learning platform for Data Structures and Algorithms (DSA) patterns.
+- React 19
+- Vite
+- Tailwind CSS
+- React Router
 
----
-
-## 🚀 Features
-
-- **Interactive Learning**: Comprehensive tutorials and practice problems for DSA patterns
-- **Pattern-wise Organization**: Learn DSA through categorized patterns like BFS, DFS, Sliding Window, etc.
-- **Responsive Design**: Optimized for all device sizes (Mobile, Tablet, Desktop)
-- **Modern UI**: Clean and professional design with smooth animations
-- **Performance Optimized**: Vite-based fast builds and development
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend**: React 19, Tailwind CSS, React Router
-- **Build Tool**: Vite
-- **Icons**: React Icons
-- **Code Quality**: ESLint
-- **Deployment**: GitHub Pages with Vite
-
----
-
-## 📋 Project Overview
-
-This repository contains an interactive learning platform for Data Structures and Algorithms (DSA). It is designed to help users understand and practice DSA patterns through categorized tutorials and problems. The app is built with Vite for lightning-fast development and optimized production builds.
-
----
-
-## 🧰 Tech & Skills
-
-- **Frontend**: React 19, Vite, Tailwind CSS (utility-first styling), React Router DOM
-- **Languages**: JavaScript (ESNext), JSX
-- **Icons & Components**: react-icons
-- **Docs / SEO**: meta tags, manifest.json, sitemap.xml, robots.txt, favicon
-- **Testing & Linting**: ESLint (config included)
-- **Build & Deployment**: Vite for fast builds, GitHub Pages for hosting
-
----
-
-## Data Structures & Algorithms (DSA)
-
-This platform emphasizes algorithmic problem solving and DSA fundamentals. Learning resources include:
-
-- **Pattern-wise DSA repository** (arrays, two-pointers, binary search, DP, graphs)
-- **Interactive tutorials** for each pattern
-- **Practice problems** with solutions
-
----
-
-## 📂 Patterns Showcase
-
-The platform includes the following DSA patterns:
-
-1. **BFS (Breadth-First Search)**
-   - Tutorials, code examples, and practice problems
-
-2. **DFS (Depth-First Search)**
-   - Tutorials, code examples, and practice problems
-
-3. **Sliding Window**
-   - Tutorials, code examples, and practice problems
-
-4. **Two Pointers**
-   - Tutorials, code examples, and practice problems
-
-5. **Graph Algorithms**
-   - Tutorials, code examples, and practice problems
-
-6. **Union-Find**
-   - Tutorials, code examples, and practice problems
-
-7. **Cyclic Sort**
-   - Tutorials, code examples, and practice problems
-
-8. **Merge Intervals**
-   - Tutorials, code examples, and practice problems
-
-9. **Fast & Slow Pointers**
-   - Tutorials, code examples, and practice problems
-
----
-
-## 📦 Install & Run (Local)
-
-Clone, install and run locally:
+## Getting Started
 
 ```bash
-git clone https://github.com/ani8727/DSA_Learing_Hub.git
-cd DSA_Learing_Hub
+# Install dependencies
 npm install
+
+# Run development server
 npm run dev
-```
 
-Build for production:
-
-```bash
+# Build for production
 npm run build
-# Preview the production build locally
-npm run preview
 ```
 
----
+## Patterns Covered
 
-## 🌍 Deployment Instructions
+### Array Patterns
+- Two Pointers
+- Sliding Window
+- Fast & Slow Pointers
+- Merge Intervals
+- Cyclic Sort
 
-### GitHub Pages Deployment
+### Graph Patterns  
+- DFS (Depth-First Search)
+- BFS (Breadth-First Search)
+- Union-Find
 
-The platform is ready for deployment on GitHub Pages.
+### Tree Patterns
+- Tree DFS
+- Tree BFS
 
-#### Deploy Steps:
+## Project Structure
 
-1. Build the project:
+```
+src/
+├── patterns/              # Pattern implementations
+│   ├── sliding-window/
+│   ├── two-pointers/
+│   ├── dfs/
+│   ├── bfs/
+│   └── graph/
+│
+├── data/
+│   ├── patternsData.js    # Pattern definitions
+│   └── problemsData.js    # Problem sets
+│
+├── components/            # Reusable components
+├── pages/                 # Main pages
+└── layouts/               # Layout components
+```
 
-   ```bash
-   npm run build
-   ```
+## License
 
-   The `dist` folder is ready for deployment
+MIT License - feel free to use this project for learning.
 
-2. Push to main branch:
+## Author
 
-   ```bash
-   git add .
-   git commit -m "Update Project"
-   git push origin main
-   ```
+**Aniket Gupta**
+- GitHub: [@ani8727](https://github.com/ani8727)
+- Portfolio: [ani8727.github.io/PortFolio](https://ani8727.github.io/PortFolio/)
+- LinkedIn: [aniket8727](https://www.linkedin.com/in/aniket8727)
 
-3. Deploy to GitHub Pages:
+[⬆ Back to Top](#-dsa-learning-hub---pattern-based-mastery-platform)
 
-   ```bash
-   npm run deploy
-   ```
-
----
-
-## 📫 Contact
-
-Connect via GitHub.
-
----
-
-_Last updated: 2026-01-01_
+</div>

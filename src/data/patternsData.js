@@ -1,5 +1,8 @@
-// Comprehensive DSA Patterns Data
+// Comprehensive DSA Patterns Data - Complete Pattern Coverage
 export const patternsData = [
+  // ============================================
+  // ARRAYS & STRINGS PATTERNS
+  // ============================================
   {
     id: 'sliding-window',
     name: 'Sliding Window',
@@ -8,7 +11,7 @@ export const patternsData = [
     difficulty: 'Medium',
     category: 'Arrays & Strings',
     icon: '🪟',
-    problemCount: 12,
+    problemCount: 25,
     timeComplexity: 'O(n)',
     spaceComplexity: 'O(1) - O(k)',
     prerequisites: ['Arrays', 'Two Pointers basics'],
@@ -146,26 +149,218 @@ export const patternsData = [
   },
   {
     id: 'dfs',
-    name: 'Depth-First Search (DFS)',
-    shortDescription: 'Explore as deep as possible before backtracking, ideal for path finding and tree problems.',
-    description: 'DFS explores as far as possible along each branch before backtracking. It uses recursion or a stack and is ideal for exploring all paths.',
-    difficulty: 'Medium',
-    category: 'Trees & Graphs',
+    name: 'Tree DFS Traversals',
+    shortDescription: 'Explore trees using preorder, inorder, and postorder traversals for various problem types.',
+    description: 'Tree DFS patterns include preorder, inorder, and postorder traversals. Master recursive and iterative approaches for tree exploration and problem-solving.',
+    difficulty: 'Easy',
+    category: 'Trees',
     icon: '🌲',
-    problemCount: 16,
-    timeComplexity: 'O(V + E)',
-    spaceComplexity: 'O(h) or O(V)',
+    problemCount: 30,
+    timeComplexity: 'O(n)',
+    spaceComplexity: 'O(h)',
     prerequisites: ['Recursion', 'Stacks', 'Trees'],
     useCases: [
       'Tree path sum problems',
-      'All paths for a sum',
-      'Graph cycle detection',
+      'Calculate height and diameter',
+      'Serialize and deserialize trees',
+      'Validate BST'
+    ],
+    keyInsights: [
+      'Preorder: Root → Left → Right',
+      'Inorder: Left → Root → Right (sorted in BST)',
+      'Postorder: Left → Right → Root (bottom-up)'
+    ]
+  },
+  {
+    id: 'tree-bfs',
+    name: 'Tree BFS (Level Order)',
+    shortDescription: 'Process trees level by level using queue-based breadth-first search.',
+    description: 'Level order traversal processes nodes level by level, ideal for finding minimum depth, right/left views, and zigzag patterns.',
+    difficulty: 'Easy',
+    category: 'Trees',
+    icon: '🌊',
+    problemCount: 20,
+    timeComplexity: 'O(n)',
+    spaceComplexity: 'O(w)',
+    prerequisites: ['Queues', 'Trees'],
+    useCases: [
+      'Level order traversal',
+      'Right/left side view',
+      'Zigzag traversal',
+      'Minimum depth'
+    ],
+    keyInsights: [
+      'Use queue for level-by-level processing',
+      'Track level size for level-specific logic',
+      'Space = O(width) not O(height)'
+    ]
+  },
+  {
+    id: 'bst',
+    name: 'Binary Search Tree',
+    shortDescription: 'Leverage BST property (left < root < right) for efficient search and operations.',
+    description: 'BST patterns exploit the ordering property for O(log n) operations in balanced trees. Master search, insert, delete, and validation.',
+    difficulty: 'Medium',
+    category: 'Trees',
+    icon: '🔍',
+    problemCount: 25,
+    timeComplexity: 'O(log n) avg, O(n) worst',
+    spaceComplexity: 'O(h)',
+    prerequisites: ['Trees', 'Binary Search'],
+    useCases: [
+      'Search, insert, delete in BST',
+      'Kth smallest/largest element',
+      'Validate BST',
+      'Inorder successor/predecessor'
+    ],
+    keyInsights: [
+      'Inorder traversal gives sorted order',
+      'Balance is critical for performance',
+      'Compare with root to decide left/right'
+    ]
+  },
+  {
+    id: 'tree-construction',
+    name: 'Tree Construction',
+    shortDescription: 'Build trees from traversals, arrays, or serialize/deserialize representations.',
+    description: 'Master constructing trees from various inputs: traversal sequences, sorted arrays, or serialized formats.',
+    difficulty: 'Hard',
+    category: 'Trees',
+    icon: '🏗️',
+    problemCount: 15,
+    timeComplexity: 'O(n)',
+    spaceComplexity: 'O(n)',
+    prerequisites: ['Trees', 'Hashmaps', 'Recursion'],
+    useCases: [
+      'Construct from preorder + inorder',
+      'Construct from postorder + inorder',
+      'Sorted array to balanced BST',
+      'Serialize/deserialize'
+    ],
+    keyInsights: [
+      'Use hashmap for O(1) index lookup',
+      'Preorder/postorder gives root',
+      'Inorder splits left and right subtrees'
+    ]
+  },
+  {
+    id: 'tree-dp',
+    name: 'Tree Dynamic Programming',
+    shortDescription: 'Optimize tree problems by combining subtree solutions using dynamic programming.',
+    description: 'Tree DP solves optimization problems by making choices at each node and combining subtree results.',
+    difficulty: 'Hard',
+    category: 'Trees',
+    icon: '🧮',
+    problemCount: 18,
+    timeComplexity: 'O(n)',
+    spaceComplexity: 'O(h)',
+    prerequisites: ['Trees', 'Dynamic Programming', 'DFS'],
+    useCases: [
+      'House Robber III',
+      'Maximum path sum',
+      'Binary tree cameras',
+      'Count good nodes'
+    ],
+    keyInsights: [
+      'Choose or skip current node',
+      'Combine subtree DP states',
+      'Post-order traversal typical'
+    ]
+  },
+  {
+    id: 'graph-dfs',
+    name: 'Graph DFS',
+    shortDescription: 'Explore graphs depth-first for connected components, cycles, and path finding.',
+    description: 'Graph DFS explores as far as possible before backtracking. Master cycle detection, component counting, and topological sorting.',
+    difficulty: 'Medium',
+    category: 'Graphs',
+    icon: '🌲',
+    problemCount: 35,
+    timeComplexity: 'O(V + E)',
+    spaceComplexity: 'O(V)',
+    prerequisites: ['Recursion', 'Stacks', 'Graphs'],
+    useCases: [
+      'Connected components',
+      'Cycle detection',
+      'All paths finding',
       'Topological sort'
     ],
     keyInsights: [
-      'Uses recursion or explicit stack',
-      'Great for exhaustive search problems',
-      'Backtracking is a form of DFS'
+      'Recursive or stack-based',
+      'Three-color for directed cycle detection',
+      'Backtracking for all paths'
+    ]
+  },
+  {
+    id: 'graph-bfs',
+    name: 'Graph BFS',
+    shortDescription: 'Find shortest paths in unweighted graphs using breadth-first search.',
+    description: 'Graph BFS guarantees shortest path in unweighted graphs. Master level-order processing and multi-source BFS.',
+    difficulty: 'Medium',
+    category: 'Graphs',
+    icon: '🌊',
+    problemCount: 30,
+    timeComplexity: 'O(V + E)',
+    spaceComplexity: 'O(V)',
+    prerequisites: ['Queues', 'Graphs'],
+    useCases: [
+      'Shortest path (unweighted)',
+      'Level-order problems',
+      'Multi-source BFS',
+      '0-1 BFS'
+    ],
+    keyInsights: [
+      'Mark visited when pushing to queue',
+      'Queue size = nodes at current level',
+      'Guarantees shortest path'
+    ]
+  },
+  {
+    id: 'dijkstra',
+    name: 'Dijkstra\'s Algorithm',
+    shortDescription: 'Find shortest paths in weighted graphs with non-negative weights.',
+    description: 'Dijkstra\'s algorithm uses priority queue to find shortest paths from a source to all vertices in weighted graphs.',
+    difficulty: 'Hard',
+    category: 'Graphs',
+    icon: '🛣️',
+    problemCount: 20,
+    timeComplexity: 'O((V + E) log V)',
+    spaceComplexity: 'O(V)',
+    prerequisites: ['Graphs', 'Priority Queues', 'Heaps'],
+    useCases: [
+      'Network delay time',
+      'Cheapest flights within K stops',
+      'Path with minimum effort',
+      'Shortest path problems'
+    ],
+    keyInsights: [
+      'Only works with non-negative weights',
+      'Greedy approach with min-heap',
+      'Relaxation of edges'
+    ]
+  },
+  {
+    id: 'topological-sort',
+    name: 'Topological Sort',
+    shortDescription: 'Order tasks with dependencies using topological sorting of directed acyclic graphs.',
+    description: 'Topological sort provides linear ordering of vertices in DAG. Master Kahn\'s algorithm and DFS-based approaches.',
+    difficulty: 'Medium',
+    category: 'Graphs',
+    icon: '📊',
+    problemCount: 15,
+    timeComplexity: 'O(V + E)',
+    spaceComplexity: 'O(V)',
+    prerequisites: ['Graphs', 'DFS', 'BFS'],
+    useCases: [
+      'Course schedule',
+      'Task scheduling',
+      'Build order',
+      'Alien dictionary'
+    ],
+    keyInsights: [
+      'Only works on DAGs',
+      'Kahn\'s uses in-degree counts',
+      'DFS-based uses reverse post-order'
     ]
   },
   {
@@ -176,7 +371,7 @@ export const patternsData = [
     difficulty: 'Hard',
     category: 'Graphs',
     icon: '🔗',
-    problemCount: 8,
+    problemCount: 25,
     timeComplexity: 'O(α(n)) ≈ O(1)',
     spaceComplexity: 'O(n)',
     prerequisites: ['Graphs', 'Arrays', 'Recursion'],
@@ -193,27 +388,51 @@ export const patternsData = [
     ]
   },
   {
+    id: 'mst',
+    name: 'Minimum Spanning Tree',
+    shortDescription: 'Connect all vertices with minimum total edge weight using Kruskal or Prim algorithms.',
+    description: 'MST algorithms find minimum cost to connect all vertices. Master Kruskal\'s (edge-centric) and Prim\'s (vertex-centric).',
+    difficulty: 'Hard',
+    category: 'Graphs',
+    icon: '🌳',
+    problemCount: 12,
+    timeComplexity: 'O(E log E) or O((V+E) log V)',
+    spaceComplexity: 'O(V + E)',
+    prerequisites: ['Graphs', 'Union-Find', 'Priority Queues'],
+    useCases: [
+      'Min cost to connect all points',
+      'Connecting cities',
+      'Network design',
+      'Optimize water distribution'
+    ],
+    keyInsights: [
+      'Kruskal: sort edges, use union-find',
+      'Prim: grow tree from vertex, use min-heap',
+      'Both give same MST weight'
+    ]
+  },
+  {
     id: 'graph',
-    name: 'Graph Patterns',
-    shortDescription: 'Master various graph algorithms including traversal, shortest paths, and topology.',
-    description: 'Graph patterns encompass various algorithms for traversing, searching, and finding optimal paths in graph data structures.',
+    name: 'Advanced Graph Patterns',
+    shortDescription: 'Master advanced graph algorithms including strongly connected components and bridges.',
+    description: 'Advanced graph patterns include Tarjan\'s algorithm, Kosaraju\'s algorithm, and finding bridges/articulation points.',
     difficulty: 'Hard',
     category: 'Graphs',
     icon: '🕸️',
-    problemCount: 20,
+    problemCount: 15,
     timeComplexity: 'Varies by algorithm',
     spaceComplexity: 'O(V + E)',
     prerequisites: ['BFS', 'DFS', 'Priority Queues'],
     useCases: [
-      'Shortest path (Dijkstra, Bellman-Ford)',
-      'Minimum spanning tree',
-      'Topological sorting',
-      'Strongly connected components'
+      'Strongly connected components',
+      'Bridges in network',
+      'Articulation points',
+      'Bipartite graph checking'
     ],
     keyInsights: [
-      'Choose algorithm based on graph properties',
-      'Consider weighted vs unweighted edges',
-      'Directed vs undirected affects approach'
+      'Use discovery and low-link times',
+      'Track visiting vs visited states',
+      'Critical for network reliability'
     ]
   }
 ];
@@ -225,7 +444,7 @@ export const categories = [
   'Linked Lists',
   'Intervals',
   'Arrays',
-  'Trees & Graphs',
+  'Trees',
   'Graphs'
 ];
 
@@ -256,6 +475,22 @@ export const searchPatterns = (query) => {
     pattern.shortDescription.toLowerCase().includes(lowerQuery) ||
     pattern.category.toLowerCase().includes(lowerQuery)
   );
+};
+
+// Get patterns by category with count
+export const getPatternStats = () => {
+  const stats = {};
+  patternsData.forEach(pattern => {
+    if (!stats[pattern.category]) {
+      stats[pattern.category] = {
+        count: 0,
+        totalProblems: 0
+      };
+    }
+    stats[pattern.category].count++;
+    stats[pattern.category].totalProblems += pattern.problemCount || 0;
+  });
+  return stats;
 };
 
 export default patternsData;

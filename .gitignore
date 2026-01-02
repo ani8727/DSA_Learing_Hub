@@ -28,6 +28,9 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# Internal project documentation (not for public repo)
+project-internal/
+
 # Misc
 *.swp
 *.lock
