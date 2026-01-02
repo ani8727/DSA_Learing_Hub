@@ -1,16 +1,11 @@
-import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import { FiSun, FiMoon, FiGithub } from 'react-icons/fi';
+import { useTheme } from '../context/ThemeContext';
 
 const Navbar = ({ onMenuToggle, isSidebarOpen }) => {
   const location = useLocation();
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    // Future: Implement actual theme switching logic
-  };
+  const { isDark, toggleTheme } = useTheme();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark-800/95 backdrop-blur-md border-b border-dark-600 shadow-lg">
@@ -58,7 +53,7 @@ const Navbar = ({ onMenuToggle, isSidebarOpen }) => {
               aria-label="Toggle theme"
               title="Toggle Dark/Light Mode"
             >
-              {isDarkMode ? (
+              {isDark ? (
                 <FiMoon className="w-5 h-5 text-indigo-400 group-hover:text-indigo-300 transition-colors" />
               ) : (
                 <FiSun className="w-5 h-5 text-amber-400 group-hover:text-amber-300 transition-colors" />
