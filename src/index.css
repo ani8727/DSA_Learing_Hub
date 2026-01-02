@@ -91,6 +91,24 @@ html.light .shadow-glow {
   box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
 }
 
+html.light footer {
+  background: linear-gradient(to bottom, #f1f5f9, #e2e8f0) !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light .bg-gradient-to-b {
+  background: linear-gradient(to bottom, #f1f5f9, #e2e8f0) !important;
+}
+
+html.light .bg-gradient-to-r {
+  background: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+}
+
+html.light main,
+html.light #root > div {
+  background-color: #f8fafc !important;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

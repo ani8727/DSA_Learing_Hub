@@ -3,7 +3,7 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-dark-800 to-dark-900 border-t border-dark-600 mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Left: Copyright */}
           <div className="text-sm flex items-center gap-2">
