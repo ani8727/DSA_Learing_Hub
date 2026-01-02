@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DSA Pattern Hub</title>
+  <script>
+    // Redirect to index.html with the path as a query parameter
+    const path = window.location.pathname.slice(1);
+    window.location.replace(
+      window.location.origin + 
+      '/DSA_Learing_Hub/' + 
+      (path ? '?redirect=' + path : '')
+    );
+  </script>
+</head>
+<body></body>
+</html>
